@@ -157,9 +157,9 @@
 
                         <p>2012年3月　 長崎工業高等学校　情報技術科　卒業</p>
                         <p>2012年4月　 グローリー株式会社　入社</p>
-                        <p>2019年10月　グローリー株式会社　退職</p>
-                        <p>2019年10月　TECH:EXPERT入校</p>
-                        <p>2019年12月　TECH:EXPERT卒業</p>
+                        <p>2019年9月　 グローリー株式会社　退職</p>
+                        <p>2019年9月　 TECH:EXPERT　入校（短期集中コース）</p>
+                        <p>2019年12月　TECH:EXPERT　卒業</p>
                     </div>
                 </div>
                 <div class="col-block process__col" data-item="3" data-aos="fade-up">
@@ -292,40 +292,95 @@
                 <div class="col-full testimonials__slider">
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                        <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
-                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</p>
                         <div class="testimonials__author">
-                            Tim Cook
-                            <span>CEO, Apple</span>
+                            ① Ruby on Rails（チーム開発）
                         </div>
+                        <p class="portfolio_text">
+                            <b>DB設計</b><br>
+                            　【概要】<br>
+                            　　・必要なテーブル・カラムの選定、アソシエーションの決定<br>
+                            　【実装内容】<br>
+                            　　・ER図の作成（使用アプリ：MYSQLworkbench）<br>
+                            　　・各テーブルの作成<br>
+                            　　・モデルへのアソシエーションの記述<br><br>
+                            
+                            <b>AWSデプロイ</b><br>
+                            　【概要】<br>
+                            　　・チーム開発の成果をAWSでデプロイ<br>
+                            　　・GitHub使用方法・コンフリクト時等のトラブル対応<br>
+                            　【実装内容】<br>
+                            　　・Elastic IPアドレス・EC2インスタンス・S3バケット作成<br>
+                            　　・チーム開発用に画像保存先などを環境毎に分岐設定<br>
+                            　　・環境変数をcredentials.yml.encに定義<br>
+                            　　・GitHubトラブル対応
+                        </p>
                     </div> <!-- end testimonials__slide -->
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
-                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
                         <div class="testimonials__author">
-                            Sundar Pichai
-                            <span>CEO, Google</span>
+                            ② Ruby on Rails（チーム開発）
                         </div>
+                        <p class="portfolio_text">
+                            <b>ユーザー新規登録・ログイン機能・編集機能</b><br>
+                            　【概要】<br>
+                            　　・ユーザー機能を一貫して担当<br>
+                            　【実装内容】<br>
+                            　　・ウィザード形式フォームで新規登録<br>
+                            　　・新規登録・ログイン時のreCAPTCHA認証<br>
+                            　　・CSS（Scss）を用いたステップバー作成<br>
+                            　　・バリデーションエンジンを用いたリアルタイムチェック<br>
+                            　　・fields_forを用いた子テーブルのレコード同時更新<br><br>
+                            
+                            <b>ルーティングの設定及び各機能アクセス制限</b><br>
+                            　【概要】<br>
+                            　　・チームメンバーの実装に合わせてルーティングを設定<br>
+                            　　・一度購入された商品は再購入できない等の機能制限<br>
+                            　【実装内容】<br>
+                            　　・memberとcollectionを用いたルーティング作成<br>
+                            　　・各モデルの関係性を考慮したネスト構造<br>
+                            　　・機能制限のメソッドをbeforeアクションで定義
+                        </p>
                     </div> <!-- end testimonials__slide -->
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
                         <div class="testimonials__author">
-                            Satya Nadella
-                            <span>CEO, Microsoft</span>
+                            ③ Ruby on Rails（チーム開発）
                         </div>
+                        <p class="portfolio_text">
+                            <b>商品購入機能</b><br>
+                            　【概要】<br>
+                            　　・商品をクレジットカード決済を用いて購入する機能（Pay.jp）<br>
+                            　【実装内容】<br>
+                            　　・クレジットカードへのアクセスキーを保存するMVCの作成<br>
+                            　　・payjpを導入し、payjp側へカード情報と顧客情報を新規作成<br>
+                            　　・登録した情報にアクセスする為のキーをDBへ保存<br>
+                            　　・DBのキーを利用してpayjpのクレジットカード情報を取得し<br>
+                            　　　自分のカード情報(下4桁,期限など)を表示する<br>
+                            　　・商品購入時にDBのキーを使ってpayjpのカードを使用し<br>
+                            　　　決済が完了する<br>
+                            　　・決済が完了すると注文情報、売上情報のレコードを作成する<br><br>
+                            
+                            <b>マイページ出品商品一覧機能</b><br>
+                            　【概要】<br>
+                            　　・出品した商品を状態に合わせて一覧表示<br>
+                            　【担当内容】<br>
+                            　　・出品中・取引中・売却済みの３パターンのフロント作成<br>
+                            　　・上記ステータスのデータ有無によって背景画像変更<br>
+                        </p>
+                    </div> <!-- end testimonials__slide -->
+                    <div class="testimonials__slide">
+                        <div class="testimonials__author">
+                            Django（個人開発）
+                        </div>
+                        <p class="portfolio_text">
+                        </p>
                     </div> <!-- end testimonials__slide -->
                     
                 </div> <!-- end testimonials__slider -->
 
             </div> <!-- end testimonials -->
 
-        </div> <!-- end testimonials-wrap -->
+        </div>
     </section> <!-- end s-works -->
 
     <!-- contact
@@ -361,6 +416,9 @@
                     </li>
                     <li>
                         <a href="https://twitter.com/koooo0401"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kooo0401"><i class="fab fa-github"></i></a>
                     </li>
                 </ul> <!-- end contact-social -->
 
