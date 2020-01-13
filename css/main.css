@@ -2823,6 +2823,7 @@ html.no-csstransitions .home-content__main {
   font-size: 1.8rem;
   line-height: 1.5;
   color: #000000;
+  text-decoration : underline;
 }
 .testimonials__author span {
   display: block;
