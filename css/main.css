@@ -159,7 +159,8 @@ h1, .h1 {
   font-family: arial black;
   color: #555555;
   text-align: center;
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  margin-top: 2rem;
 }
 
 h2, .h2 {
